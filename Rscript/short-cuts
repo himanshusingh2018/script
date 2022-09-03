@@ -1,0 +1,7 @@
+##### SAVE FILE IN THE .rda FORMAT
+README = function(){#object 1
+  writeLines("--->  A variable called 'tfPairEnrich' describing the TF-specific regulon conservation across pairs of")
+}
+tfNetEnrich -> Himanshu_tfNetEnrich#object2
+#save both the object in file Himanshu_tfNetEnrich.rda
+save(tfNetEnrich,README,file='/Volumes/archive_shares/af_lab/GTEx/RDA_Files/Aracne_Corrected/Himanshu_tfNetEnrich.rda')
