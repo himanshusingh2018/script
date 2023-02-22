@@ -7,6 +7,10 @@ rule picard_markduplicate:
 		picard_mkdup=config['resources']['picard_mkdup_bam'],
 		picard_metrics=config['resources']['picard_mkdup_txt']
 
+	conda: config['resources']['cwd']+'envs/picard.yaml'
+	log: config['resources']['cwd']+'log/picard_mkdup/{sample}_log.txt'
+	message: "PICARD MKDUP: {input}"
+
 	shell:
 		"""
 		picard -Xmx64g MarkDuplicates \

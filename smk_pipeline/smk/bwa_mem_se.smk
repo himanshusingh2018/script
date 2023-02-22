@@ -10,6 +10,9 @@ rule bwa_mem_se:
 
 	params: RG = config['resources']['RG']
 	threads: 8
+	conda: config['resources']['cwd']+'envs/bwa.yaml'
+	log: config['resources']['cwd']+'log/bwa_mem_se/{sample}_log.txt'
+	message: "BWA MEM SE: {input.fq}"
 	shell:
 		"""
 		bwa mem -t {threads} -R '{params.RG}' {input.genome} {input.fq} | 

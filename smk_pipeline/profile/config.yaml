@@ -1,7 +1,9 @@
 resources:
+  cwd: '/Users/singhh5/Music/learn/test/'
   genome: 'hg19/hg19_refgene/hg19.fa'
   gtf: 'hg19/hg19_refgene/hg19.refGene.gtf'
   bwa_index: 'hg19/hg19_bwa_index/hg19'
+  bowtie2_index: 'hg19/hg19_bowtie2_index/'
   fq_dir: 'fastq/'
   fq1: '{sample}.fastq'
   fq2: '{sample}.fastq'

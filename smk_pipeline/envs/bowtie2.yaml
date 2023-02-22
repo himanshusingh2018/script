@@ -3,4 +3,4 @@ channels:
   - bioconda
   - conda-forge
 dependencies:
-  - python=3.8
+  - bowtie2=2.5.1
