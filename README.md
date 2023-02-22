@@ -1,4 +1,4 @@
 # script
-1. Rscript
-2. Python
-3. Snakemake
+1. rscript
+2. python
+3. smk_pipeline
