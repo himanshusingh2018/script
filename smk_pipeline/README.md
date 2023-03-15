@@ -24,3 +24,9 @@
 	samtools_index.smk: index bam file
 
 4. all_rules.smk: call all the smk/scripts.smk
+
+#Run one job
+snakemake -s /home/singhh5/script/smk_pipeline/smk/bwa_mem_pe.smk -j 1 --cores 40 bwa_mapped_reads/S05-35381-T02_IGO_08138_C_9_S43.bam --use-conda
+-j: number of jobs to run parallelly
+--cores: number of cores assigned to each job
+--use-conda: install required packages from conda
