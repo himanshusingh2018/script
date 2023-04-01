@@ -13,8 +13,10 @@ gse <- getGEO(my_id)
 gse <- gse[[1]]
 
 exprs(gse) <- log2(exprs(gse))
-annot <- fData(gse)
+annot <- fData(gse)#extract gene symbol for probeset
+sample <- pData(gse)#extract sample annotation
 exp <- exprs(gse)
+
 
 ##Columns are different for different GPL annotation. First check the columns and then decide to extract
 colnames(annot)
